@@ -1,12 +1,14 @@
 {
   "name": "tstmlog",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A typescript to mlog (Mindustry Logic) compiler/transpiler.",
   "main": "lib/index.js",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "types": "src/typings/index.d.ts",
   "bin": {
-    "tstmlog":"lib/index.js"
+    "tstmlog": "lib/index.js"
   },
   "scripts": {
     "test": "exit 1",
