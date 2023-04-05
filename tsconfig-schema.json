@@ -59,46 +59,25 @@
                     "type": "boolean",
                     "default": false
                 },
-                /*"noResolvePaths": {
+                /*"noResolvePaths": { //PLEASE WHAT DOES THIS DO
                     "description": "An array of import paths that should not be resolved but copied verbatim to output lua.",
                     "type": "array"
                 },*/
-                "sourceMapTraceback": {
+                /*"sourceMapTraceback": { //PLEASE WHAT DOES THIS DO
                     "description": "Applies the source map to show source TS files and lines in error tracebacks.",
                     "default": false,
                     "type": "boolean"
-                },
-                "tstlVerbose": {
-                    "description": "Give verbose tstl output, helpful when diagnosing tstl issues.",
+                },*/
+                "verbose": {
+                    "description": "Give verbose tstmlog output, helpful when diagnosing tstmlog issues.",
                     "type": "boolean",
                     "default": false
                 },
-                "luaPlugins": {
-                    "description": "List of TypeScriptToLua plugins.",
-                    "type": "array",
-                    "items": {
-                        "description": "Describes TypeScriptToLua plugin",
-                        "type": "object",
-                        "required": ["name"],
-                        "properties": {
-                            "name": {
-                                "description": "Path to the JS file, that contains the plugin code",
-                                "type": "string"
-                            },
-                            "import": {
-                                "type": "string"
-                            }
-                        }
-                    }
-                },
                 "measurePerformance": {
-                    "description": "Measure and report performance of the tstl compiler.",
-                    "type": "boolean"
+                    "description": "Measure and report performance of the compiler.",
+                    "type": "boolean",
+                    "default": false
                 }
-            },
-            "dependencies": {
-                "luaBundle": ["luaBundleEntry"],
-                "luaBundleEntry": ["luaBundle"]
             }
         }
     },
